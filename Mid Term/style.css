@@ -1,0 +1,166 @@
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	
+}
+header{
+	width: 100%;
+	height: 15%;
+	padding-top: 25px;
+	background-color: #ecf0f1;
+	box-sizing: border-box;
+	background-color: blue;
+}
+header h1{
+	text-align: center;
+	margin: 0;
+
+}
+.container{
+	position: relative;
+	height: 85%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+	background-color: black;
+}
+.score-container{
+	position: relative;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	color: white;
+}
+#score{
+	position: absolute;
+	text-align: center;
+	font-size: 30px;
+	width: 100%;
+}
+.player{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: blue;
+	width: 40px;
+	height: 15px;
+	font-size: 10px;
+	padding: 2px 10px;
+	box-sizing: border-box;
+}
+.AI{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(50%, -50%);
+	background-color: blue;
+	width: 40px;
+	height: 15px;
+	font-size: 10px;
+	padding: 2px 10px;
+	box-sizing: border-box;
+}
+.buttons{
+	width: 280px;
+	position: absolute;
+	top: 20%; 
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bn{
+	width: 80px;
+	height: 80px;
+    margin :5px;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: black;
+    font-size: 40px;
+    background-color: blue;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.bn:hover{
+    background-color: blue;
+    border-color: white;
+    color: white;
+}
+#game{
+	position: absolute;
+	top: 43%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 540px;
+	height: 40%;
+	display: none;
+}
+#user{
+	position: relative;
+	width: 37.5%;
+	font-size: 50px;
+}
+#AI{
+	position: relative;
+	width: 37.5%;
+	font-size: 50px;
+}
+#userPick{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110px;
+	height: 110px;
+	font-size: 50px;
+	padding-top: 20px;
+	border: 3px solid white;
+    border-radius: 50%;
+    color: black;
+    background-color: blue;
+    box-sizing: border-box;
+    text-align: center;
+}
+#comp{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110px;
+	height: 110px;
+	font-size: 50px;
+	padding-top: 20px;
+	border: 3px solid white;
+    border-radius: 50%;
+    color: black;
+    background-color: blue;
+    box-sizing: border-box;
+    text-align: center;
+}
+#result{
+	position: relative;
+	width: 25%;
+}
+#result p{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 30px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+.sir{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	font-size: 30px;
+}

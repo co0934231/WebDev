@@ -1,0 +1,50 @@
+<!-- Christian Oliver -->
+<!-- 04-14-2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<title>Rock Paper Scissors Game</title>
+    <!-- Site used to get the rock paper scissors pictures -->
+    <script src="https://kit.fontawesome.com/e81d118c93.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Set the heading of the page -->
+	<header class="header">
+		<h1>Rock Paper Scissors Game</h1>
+	</header>
+    <!-- Container for score of both players -->
+	<div class="container">
+	    <div class="score-container">
+			<!-- span used to manipulate text -->
+		    <span class="player">Me</span>
+		    <span id="score"></span>
+		    <span class="AI">Rusty</span>
+	    </div>
+        <!-- pics to click that allows to pick a piece -->
+	    <div class="buttons">
+		    <button class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+			<button class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+			<button class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+	   </div>
+       <!-- The divs called in functions to allow selection -->
+        <div id="game">
+            <div id="user">
+	   	    <div id="userPick"></div>
+               <div class="sir">You</div>
+	   	</div>
+	   	<div id="result"><p id="who"><p></div>
+            <div id="al">
+               <div id="comp"></div>
+               <div class="sir">Rusty</div>
+	   	</div>
+	</div>
+	</div>
+	<script src="main.js"></script>   
+</body>
+</html>
